@@ -356,6 +356,10 @@ section {
     background-size: cover;
     background-position: center center;
 }
+#mlh-trust-badge {
+    right: 50px;
+    top: 0px;
+}
 @media (max-width: 1000px) { 
     .gallery-wrap {
         display: none;   
@@ -370,6 +374,10 @@ section {
     }
 }
 @media (max-width: 600px) {
+    #mlh-trust-badge {
+        right: 20px;
+        top: 65px;
+    }
     .left {
         padding-left: 0px;
         padding-right: 0px;
