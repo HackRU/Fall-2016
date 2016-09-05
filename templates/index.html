@@ -7,16 +7,16 @@
         <meta property="og:description" content="Get hyped for the best hackathon Rutgers has to offer! HackRU's 11th hackathon is coming this Fall 2016! October 22nd - 23rd." />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>HackRU Fall 2016</title>
-        <link rel="icon" type="image/png" href="../assets/img/fav.png"/>
+        <link rel="icon" type="image/png" href="../static/assets/img/fav.png"/>
         <meta property="og:image" content="http://yuzu.s-ul.eu/MYZAoh2v.png"/>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>        
-        <link rel="stylesheet" href="../css/bootstrap.css">
-        <link rel="stylesheet" href="../css/common.css">
-        <link rel="stylesheet" href="../css/landing.css">
-        <link rel="stylesheet" href="../css/slick-theme.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="../static/css/bootstrap.css">
+        <link rel="stylesheet" href="../static/css/common.css">
+        <link rel="stylesheet" href="../static/css/landing.css">
+        <link rel="stylesheet" href="../static/css/slick-theme.css">
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
         <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
-        <script src="../js/interactions.js"></script>
+        <script src="../static/js/interactions.js"></script>
         <script>
             $(document).ready(function(){
                 $('.gallery').slick({
@@ -37,7 +37,7 @@
         <nav>
                     <a href="#1">
                         <ul class="logo">
-                            <img src="../assets/img/logo.svg">
+                            <img src="../static/assets/img/logo.svg">
                         </ul>
                     </a>
                     <ul class="links">
@@ -60,29 +60,24 @@
                 <div class="row">
                     <div class="col-md-4 left">
                         <div class="sign-up">
-                            <img src="../assets/img/logo-red.svg">
+                            <img src="../static/assets/img/logo-red.svg">
                             <span class="grouped">
                                 <h1>fall 2016</h1>
                                 <h2>october 22nd - 23rd</h2>
                                 <h3>college avenue student center, </br> rutgers university</h3>
                             </span>
                         <div class="sign-up-area">
-                            <form action="#" method="POST" enctype="#">
-                                <div class="input-wrapper" label="Subscribe to the mailing list:">
-                                    <input id="#" name="#" type="text" class="inpt normal" placeholder="hacker@email.com">
-                                </div>
-                                <a class="button" href="#">
-                                    <button class="btn-ru">subscribe</button>
-                                </a>
-                            </form>
+                            <a class="button" href="{{ url_for('oauth_authorize', provider='mlh') }}">
+                                <button class="btn-ru">Register with MyMLH</button>
+                            </a>
                         </div>
                         <div class="social-media">
                             Follow us through the web-o-sphere:
                             <ul>
-                                <a href="https://www.facebook.com/theHackRU"><li><img src="../assets/img/fb.svg"></li></a>
-                                <a href="https://www.instagram.com/thehackru/"><li><img src="../assets/img/insta.svg"> </li></a>
-                                <a href="https://medium.com/the-hackru"><li><img src="../assets/img/medium.svg"> </li></a>
-                                <a href="https://twitter.com/thehackru"><li><img src="../assets/img/twitter.svg"> </li></a>
+                                <a href="https://www.facebook.com/theHackRU"><li><img src="../static/assets/img/fb.svg"></li></a>
+                                <a href="https://www.instagram.com/thehackru/"><li><img src="../static/assets/img/insta.svg"> </li></a>
+                                <a href="https://medium.com/the-hackru"><li><img src="../static/assets/img/medium.svg"> </li></a>
+                                <a href="https://twitter.com/thehackru"><li><img src="../static/assets/img/twitter.svg"> </li></a>
                             </ul>
                         </div>
                     </div>
@@ -90,11 +85,11 @@
                 <div class="col-md-12 hidden-sm">
                     <div class="gallery-wrap">
                         <ul class="gallery">
-                            <li style="background-image: url('../assets/img/DSC_9330.jpg')"></li>
-                            <li style="background-image: url('../assets/img/DSC_9338.jpg')"></li>
-                            <li style="background-image: url('../assets/img/DSC_9342.jpg')"></li>
-                            <li style="background-image: url('../assets/img/DSC_9348.jpg')"></li>
-                            <li style="background-image: url('../assets/img/DSC_9360.jpg')"></li>
+                            <li style="background-image: url('static/assets/img/DSC_9330.jpg')"></li>
+                            <li style="background-image: url('static/assets/img/DSC_9338.jpg')"></li>
+                            <li style="background-image: url('static/assets/img/DSC_9342.jpg')"></li>
+                            <li style="background-image: url('static/assets/img/DSC_9348.jpg')"></li>
+                            <li style="background-image: url('static/assets/img/DSC_9360.jpg')"></li>
                         </ul>
                     </div>
                 </div>
@@ -107,7 +102,7 @@
             <div class="row">
                 <div class="col-sm-5 pull-right first">
                     <div class="info-image first">
-                        <img src="../assets/img/hm.svg">
+                        <img src="../static/assets/img/hm.svg">
                     </div>
                 </div>
                 <div class="col-sm-7">
@@ -139,7 +134,7 @@
             <div class="row projects">
                 <div class="col-md-3"></div>
                 <div class="col-md-6">
-                    <img src="../assets/img/eyes.svg" style="margin: 0 auto 30px; display: block;" height="90px">
+                    <img src="../static/assets/img/eyes.svg" style="margin: 0 auto 30px; display: block;" height="90px">
                     <h2>See what other hackers made last HackRU!</h2>
                     <p>Want a better idea of what we do at HackRU? Well take a look at all the inspiring projects that were made last HackRU.</p>
                     <a class="info button" href="#">
@@ -157,7 +152,7 @@
                 <div class="col-md-3"></div>
                 <div class="col-md-6">
                     <div class="faq-wrapper">
-                        <img src="../assets/img/faq.svg">
+                        <img src="../static/assets/img/faq.svg">
                         <div class="faq">
                             <div class="faq-block">
                                 <span class="question">What's the application process?</span>
@@ -233,7 +228,7 @@
     <section id="schedule">
         <div class="container">
             <div class="dates">
-                <img src="../assets/img/schedule.svg">
+                <img src="../static/assets/img/schedule.svg">
                 <h1>Saturday</h1>
                 <ul class="schedule-wrapper">
                     <div>
@@ -278,53 +273,53 @@
     </section>
     <div class="anchor-fix" id="5"></div>
     <section id="sponsors">
-        <img src="../assets/img/sponsors.svg">
+        <img src="../static/assets/img/sponsors.svg">
         <h1>Gold Sponsors</h1>
         <div class="first">
             <a href="https://www.capitalone.com/" target="_blank">
-                <img src="../assets/img/sponsors/capital-one.svg">
+                <img src="../static/assets/img/sponsors/capital-one.svg">
             </a>
             <a href="http://www.l-3com.com/" target="_blank">
-                <img src="../assets/img/sponsors/l-3.svg">
+                <img src="../static/assets/img/sponsors/l-3.svg">
             </a>
             <a href="http://www.ibm.com/us-en/" target="_blank">
-                <img src="../assets/img/sponsors/ibm.svg">
+                <img src="../static/assets/img/sponsors/ibm.svg">
             </a>
         </div>
         <h1>Silver Sponsors</h1>
         <div class="second">
             <a href="https://www.optum.com/" target="_blank">
-                <img src="../assets/img/sponsors/optum.svg">
+                <img src="../static/assets/img/sponsors/optum.svg">
             </a>
             <a href="http://www.intel.com/" target="_blank">
-                <img src="../assets/img/sponsors/intel.svg">
+                <img src="../static/assets/img/sponsors/intel.svg">
             </a>
             <a href="http://www.verizon.com/" target="_blank">
-                <img src="../assets/img/sponsors/verizon.svg">
+                <img src="../static/assets/img/sponsors/verizon.svg">
             </a>
         </div>
         <h1>Bronze Sponsors</h1>
         <div class="third">
             <a href="https://www.mongodb.org/" target="_blank">
-                <img src="../assets/img/sponsors/mongodb.svg">
+                <img src="../static/assets/img/sponsors/mongodb.svg">
             </a>
             <a href="https://twilio.com/" target="_blank">
-                <img src="../assets/img/sponsors/twilio.svg">
+                <img src="../static/assets/img/sponsors/twilio.svg">
             </a>
             <a href="https://morganstanley.com/" target="_blank">
-                <img src="../assets/img/sponsors/morgan-stanley.svg">
+                <img src="../static/assets/img/sponsors/morgan-stanley.svg">
             </a>
             <a href="https://www.scriptr.io/" target="_blank">
-                <img src="../assets/img/sponsors/scriptr.svg">
+                <img src="../static/assets/img/sponsors/scriptr.svg">
             </a>
             <a href="https://eatstreet.com/" target="_blank">
-                <img src="../assets/img/sponsors/eatstreet.svg">
+                <img src="../static/assets/img/sponsors/eatstreet.svg">
             </a>
             <a href="https://merck.com/" target="_blank">
-                <img src="../assets/img/sponsors/merck.svg">
+                <img src="../static/assets/img/sponsors/merck.svg">
             </a>
             <a href="http://continuingstudies.rutgers.edu/" target="_blank">
-                <img src="../assets/img/sponsors/rdcs.svg">
+                <img src="../static/assets/img/sponsors/rdcs.svg">
             </a>
         </div>
         <p>Want to sponsor? <a class="normal-link" href="mailto:sponsorship@hackru.org" data-email="sponsorship@hackru.org">Email us!</a></p>
@@ -339,10 +334,10 @@
                         <p>Photography provided by<br> Major League Hacking</p>
                         <div class="social-media">
                             <ul>
-                                <a href="https://www.facebook.com/theHackRU"><li><img src="../assets/img/fb-w.svg"></li></a>
-                                <a href="https://www.instagram.com/thehackru/"><li><img src="../assets/img/insta-w.svg"> </li></a>
-                                <a href="https://medium.com/the-hackru"><li><img src="../assets/img/medium-w.svg"> </li></a>
-                                <a href="https://twitter.com/thehackru"><li><img src="../assets/img/twitter-w.svg"> </li></a>
+                                <a href="https://www.facebook.com/theHackRU"><li><img src="../static/assets/img/fb-w.svg"></li></a>
+                                <a href="https://www.instagram.com/thehackru/"><li><img src="../static/assets/img/insta-w.svg"> </li></a>
+                                <a href="https://medium.com/the-hackru"><li><img src="../static/assets/img/medium-w.svg"> </li></a>
+                                <a href="https://twitter.com/thehackru"><li><img src="../static/assets/img/twitter-w.svg"> </li></a>
                             </ul>
                         </div>
                     </div>
@@ -351,10 +346,10 @@
                     <div class="right-foot">
                         <span>In partnership with:</span>
                         <a href="https://mlh.io/">
-                            <img src="../assets/img/mlh.svg">
+                            <img src="../static/assets/img/mlh.svg">
                         </a>
                         <a href="http://usacs.rutgers.edu/">
-                            <img src="../assets/img/usacs.svg">
+                            <img src="../static/assets/img/usacs.svg">
                         </a>
                     </div>
                 </div>
