@@ -67,9 +67,15 @@
                                 <h3>college avenue student center, </br> rutgers university</h3>
                             </span>
                         <div class="sign-up-area">
-                            <a class="button" href="{{ url_for('oauth_authorize', provider='mlh') }}">
-                                <button class="btn-ru">Register with MyMLH</button>
-                            </a>
+                            {% if not current_user.is_authenticated %}
+                                <a class="button" href="{{ url_for('oauth_authorize', provider='mlh') }}">
+                                    <button class="btn-ru">Register with MyMLH</button>
+                                </a>
+                            {% else %}
+                                <a class="button" href="{{ url_for('dash') }}">
+                                    <button class="btn-ru">Dashboard</button>
+                                </a>
+                            {% endif %}
                         </div>
                         <div class="social-media">
                             Follow us through the web-o-sphere:
