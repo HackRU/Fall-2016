@@ -91,6 +91,11 @@ nav .links a:hover {
     width: 100px;
     text-align: center;
 }
+@media (max-width: 400px) {
+    .links li {
+        width: 100%;
+    }
+}
 
 .logo {
     width: 0px;
