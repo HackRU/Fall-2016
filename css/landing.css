@@ -372,6 +372,10 @@ section {
     .left::after {
         content: none;
     }
+    .info-image iframe {
+        margin: 60px auto;
+        width: 100%;
+    }
 }
 @media (max-width: 600px) {
     #mlh-trust-badge {

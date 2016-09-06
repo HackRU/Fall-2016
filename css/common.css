@@ -398,13 +398,7 @@ input:focus {
         max-width: 300px;
     }
 }
-@media(max-width: 1000px) {
-    .info-image iframe {
-        text-align: center;
-        margin: 60px auto;
-        width: 100%;
-    }
-}
+
 @media(max-width: 768px) {
     .info-image.iframe, .info-image.first {
         display: flex;
